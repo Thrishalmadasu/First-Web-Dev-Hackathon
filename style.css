@@ -1,0 +1,510 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    color: #272829;
+}
+    *{
+        margin: 0;
+    }
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+span{
+    color: #3498db;
+    font-size: larger;
+}
+
+.no1{
+    margin-top: 15px;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray; 
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #3498db; 
+    width: 80px;
+    border-radius: 30px;
+    transform: scale(1.2); 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a{
+    color: black;
+}
+
+.one{
+    background-color: #3498db;
+}
+
+#section1,
+#section2,
+#section3,
+#section5,
+#section6{
+    height: 715px;
+}
+
+#section1{
+    background-image: url('./images/profile-img.jpg');
+    background-position-x: 100px;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.011);
+}
+
+.img1{
+    padding-left: 300px;
+}
+
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value (0.7) for the transparency level */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} 
+
+
+.bg-text {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+
+.portfolio{
+    text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  
+}
+
+.section-title>h2{
+    padding-bottom: 30px;
+    margin-left: 550px;
+}
+
+.about{
+    display: flex;
+}
+
+
+.profile-pic{
+    height: 500px;
+    width:400px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.right{
+    display: block;
+}
+
+.right p{
+    padding-top: 10px;
+}
+.right ul li{
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.resume-content{
+    padding-left: 100px;
+    padding-right: 20px;
+    width:400px;
+}
+
+.Education{
+    padding-top: 50px;
+}
+
+.resume-content{
+    display: inline-flex;
+    height: 300px;
+}
+.sumary,.Education{
+    width: 500px;
+    padding: 20px 30px 20px 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+.images{
+    height:500px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.imgStyle{
+    height:300px;
+    width:400px;
+}
+
+#section5{
+    padding-left: 30px;
+}
+
+/* Section-6 */
+.contact-content {
+    text-align: center;
+    padding: 50px 20px;
+    padding-top: 30px; /* Increased top padding for space */
+  }
+  
+  #contact-title{
+    font-size: 32px;
+    color: rgb(76, 75, 75);
+    text-decoration: underline;
+    text-underline-position:inherit;
+  }
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Increased margin from title to content */
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 12;
+  }
+  
+  .contact-left h3,
+  .contact-right form {
+    margin-bottom: 20px; /* Increased margin between items */
+  }
+  
+  .contact-right input,
+  .contact-right textarea,
+  .contact-right button {
+    display: block;
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    margin-bottom: 20px; /* Increased margin between form elements */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact-form button[type="submit"] {
+    width: 200px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #contact-form button[type="submit"]:hover {
+    background-color: darkblue;
+  }
+
+  /* Section-6 END */
+
+  /* footer */
+  footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+  }
+  
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: rgb(56, 56, 56);
+  }
+  
+  .footer-description {
+    margin-bottom: 20px;
+  }
+  .social-links {
+    margin-bottom: 20px;
+  }
+  .social-link {
+    margin: 0 5px;
+    text-decoration: none;
+    color: blue; 
+  }
+  .social-link:hover {
+    text-decoration: underline;
+    display: inline;
+    line-height: 0.1;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  /* footer end */
+
+  /* Section-2 */
+  .split{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  }
+
+  .details-list,
+.additional-details-list {
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.additional-details-list {
+  list-style: disc;
+  padding: 0;
+  margin-left: 150px;
+}
+
+.details-list li,.additional-details-list li{
+  margin-bottom: 30px;
+}
+
+.about-profession{
+    color: #3498db;
+}
+/* Section-2 end */
+
+/* Section-3  */
+.resume-title{
+    color: #3498db;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.resume-left li{
+    margin-top: 10px;
+}
+
+.resume-right li{
+    margin-top: 10px;
+}
+/* section-3 end */
+
+/* sectio-4 */
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: static;
+    top: 0;
+}
+
+.header a{
+    padding: 10px;
+}
+
+.portfolio-imgs{
+    padding-left: 100px;
+}
+#section4{
+    height:1000px;
+}
+
+.portfolio-imgs img{
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 80px;
+}
+/* 
+.portfolio-scroll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#col1,#col2,#col3,#col4{
+    height:715px;
+} */
+
+.portfolio-scroll {
+    display: flex;
+    max-height: 715px;
+    flex-wrap: nowrap; /* Ensure that the items stay in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+}
+
+.portfolio-imgs {
+    flex: 0 0 25%; /* Set each column to take up 25% of the container */
+    box-sizing: border-box;
+    padding: 10px; /* Add some padding between the columns */
+}
+
+.wrapper{
+    max-height:600px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+#card1,#card2,#card3,#card4{
+    margin-left: 150px;
+    min-width: 1209px;
+}
+
+.wrapper .item{
+    height: 1000px;
+}
+
+.card-img{ 
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.portfolio-link:hover{
+    color: #3498db;
+}
+
+#section4{
+    scroll-behavior: smooth;
+}
+
+/* section-6 */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+#h1SERVICES {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+#paraSERVICES {
+    max-width: 800px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 100px;
+}
+
+.services-content1,
+.services-content2,
+.services-content3,
+.services-content4,
+.services-content5,
+.services-content6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.services-content1:hover,
+.services-content2:hover,
+.services-content3:hover,
+.services-content4:hover,
+.services-content5:hover,
+.services-content6:hover {
+    transform: translateY(-10px);
+}
+
+.services-content1-item,
+.services-content2-item,
+.services-content3-item,
+.services-content4-item,
+.services-content5-item,
+.services-content6-item {
+    font-size: 60px;
+    color: teal;
+}
+
+.services-content h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
